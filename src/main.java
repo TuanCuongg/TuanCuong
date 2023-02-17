@@ -1,50 +1,50 @@
-	import java.util.Scanner;
+import java.util.Scanner;
 public class main {
-		public static void main(String[] args) {
-			Scanner input = new Scanner(System.in);
+		public static void Main(String[] args) {
+			Scanner nhap = new Scanner(System.in);
 			boolean flag = true;
 			int a,b,c,n;
 			do {
 				Menu();
 				System.out.print("Nhap lua chon: ");
-				int luachon = input.nextInt();
+				int luachon = nhap.nextInt();
 				switch(luachon) {
 				case 1:
 					System.out.print("Nhap a: ");
-					a = input.nextInt();
+					a = nhap.nextInt();
 					System.out.print("Nhap b: ");
-					b = input.nextInt();
+					b = nhap.nextInt();
 					System.out.print("Nhap c: ");
-					c = input.nextInt();
+					c = nhap.nextInt();
 					bài1.ptBacHai(a, b, c);
 					break;
 				case 2: 
 					System.out.print("Nhap n: ");
-					int gt = input.nextInt();
+					int gt =nhap.nextInt();
 					System.out.printf("Giai thua cua %d: %d\n", gt, bài2.giaiThua(gt));
 					break;
 				case 3:
 					System.out.print("Nhap n: ");
-					n = input.nextInt();
-					System.out.printf("So Fibonacci thu %d: %d\n",n,bài3.Fibonacci(n));
+					n = nhap.nextInt();
+					System.out.printf("So Fibonacci thu %d: %d\n",n,bài3.fibonacci(n));
 					break;
 				case 4:
 					System.out.print("Nhap a: ");
-					a = input.nextInt();
+					a = nhap.nextInt();
 					System.out.print("Nhap b: ");
-					b = input.nextInt();
+					b = nhap.nextInt();
 					System.out.printf("Uoc chung lon nhat cua %d va %d: %d",a,b,bài4.UCLN(a, b));
 					System.out.printf("\nBoi chung nho nhat cua %d va %d: %d\n",a,b,bài4.BCNN(a, b));
 					break;
 				case 5:
 					System.out.print("Nhap n: ");
-					n = input.nextInt();
+					n = nhap.nextInt();
 					System.out.printf("Cac so nguyen to nho hon %d: ",n);
 					bài5.lietkeSNT(n);
 					break;
 				case 6:
 					System.out.print("Nhap n: ");
-					n = input.nextInt();
+					n = nhap.nextInt();
 					System.out.printf("\n%d so nguyen to dau tien: ", n);
 					bài6.SNT2(n);
 					break;
@@ -54,7 +54,7 @@ public class main {
 					break;
 				case 8:
 					System.out.println("Nhap n: ");
-					n = input.nextInt();
+					n = nhap.nextInt();
 					System.out.printf("Tong cac chu so cua %d: %d\n",n, bài8.tongChuSo(n));
 					break;
 				case 9:
@@ -62,7 +62,7 @@ public class main {
 					break;
 				case 10:
 					System.out.print("Nhap n: ");
-					n = input.nextInt();
+					n = nhap.nextInt();
 					bài10.lietKe(n);
 					break;
 				default:
